@@ -2,8 +2,7 @@
 App - Application
 
 {% if license_headers and license == "MIT" %}MIT License
-
-Copyright (c) [year] {{authors}}
+Copyright (c) {{year}} {{git-username}}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +21,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-{% endif %}{% if license_headers and license == "Apache v2" %}Copyright [yyyy] {{authors}}
+{% endif %}{% if license_headers and license == "Apache v2" %}Copyright {{year}} {{git-username}}
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -36,7 +35,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 {% endif %}{% if license_headers and license == "GNU v3" %}
-Copyright (C) <year>  {{authors}}
+Copyright (C) {{year}} {{git-username}}
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -69,7 +68,7 @@ pub fn run() -> anyhow::Result<()> {
     info!("Creating the window...");
     let mut canvas = window::create_window(
         &video, 
-        "Window", 
+        "{{project-name}}", 
         800, 
         600, 
         true, 

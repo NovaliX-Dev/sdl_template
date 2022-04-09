@@ -10,7 +10,7 @@
 
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
-* clone the project by running `git clone https://github.com/{{gh-username}}/{{project-name}}`
+* clone the project by running `git clone https://github.com/{{git-username}}/{{project-name}}`
 * go in the project root and run `cargo run`
 
 ## Reporting issues

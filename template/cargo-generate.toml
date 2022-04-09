@@ -1,6 +1,16 @@
 [placeholders.description]
 type = "string"
-prompt = "Enter a short description of the project."
+prompt = "Enter a short description of the project"
+
+[placeholders.git-username]
+type = "string"
+prompt = "Enter your Github username / organization"
+regex = "^[A-Za-z0-9][A-Za-z0-9-]{0,38}$"
+
+[placeholders.year]
+type = "string"
+prompt = "Enter the year (for copyright completion)"
+regex = "^[0-9]+$"
 
 [placeholders.license]
 type = "string"

@@ -875,7 +875,7 @@ Public License instead of this License.  But first, please read
    limitations under the License.
 {% endif %}{% if license == "MIT" %}MIT License
 
-Copyright (c) [year] {{authors}}
+Copyright (c) {{year}} {{git-username}}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
