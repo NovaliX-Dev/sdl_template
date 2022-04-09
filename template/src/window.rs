@@ -88,7 +88,7 @@ pub fn create_window(
         w_builder.resizable();
     }
 
-    // --- Add others window configuration here ---
+    // --- Add others window configuration here (if needed) ---
 
     let window = w_builder.build()
         .map_err(|e| e.to_string())?;
@@ -101,7 +101,7 @@ pub fn create_window(
         c_builder = c_builder.accelerated()
     };
 
-    // --- Add others canvas configuration here ---
+    // --- Add others canvas configuration here (if needed) ---
 
     let canvas = c_builder.build()
         .map_err(|e| e.to_string())?;
