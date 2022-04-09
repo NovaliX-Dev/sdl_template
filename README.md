@@ -9,10 +9,17 @@ It's inspired by this [template](https://github.com/rust-github/template).
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
 * Install `cargo-generate` by running `cargo install cargo-generate`
-* clone the project by running `git clone https://github.com/{{git-username}}/{{project-name}}`
-* go in the `template` directory and run `cargo generate`
+* run `cargo generate Novalix-Dev/sdl_template`
 
 ### Contributing
+
+## How to run / debug ?
+
+* Install the rust toolchain in order to have cargo installed by following
+  [this](https://www.rust-lang.org/tools/install) guide.
+* Install `cargo-generate` by running `cargo install cargo-generate`
+* clone the project by running `git clone https://github.com/{{git-username}}/{{project-name}}`
+* go in the `template` directory and run `cargo generate`
 
 ## Reporting issues
 
