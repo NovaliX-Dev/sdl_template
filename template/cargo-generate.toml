@@ -1,0 +1,14 @@
+[placeholders.description]
+type = "string"
+prompt = "Enter a short description of the project."
+
+[placeholders.license]
+type = "string"
+prompt = "Which license to use ?"
+choices = ["MIT", "GNU v3", "Apache v2"]
+default = "MIT"
+
+[placeholders.license_headers]
+type = "bool"
+prompt = "Want license in the file headers ?"
+default = true
