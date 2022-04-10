@@ -4,16 +4,16 @@
 ## Features
 ** --- Enter the features of your app here --- **.
 
-# Contributing
+## Contributing
 
-## Build instructions
+### Build instructions
 
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
 * clone the project by running `git clone https://github.com/{{git-username}}/{{project-name}}`
 * go in the project root directory and run `cargo run`
 
-## Reporting issues
+### Reporting issues
 
 Reports an issue if there is an error or a feature you want to be implemented.
 
@@ -22,7 +22,7 @@ Before reporting an issue on the
 please check that it has not already been reported by searching for some related
 keywords.
 
-### License
+## License
 {% if license == "MIT" %}This project is licensed under the MIT license.
 {% endif %}{% if license == "GNU v3" %}This project is licensed under the GNU GPL v3 license.
 {% endif %}{% if license == "Apache v2" %}This project is licensed under the Apache v2 license.
