@@ -4,7 +4,7 @@
 ## Features
 ** --- Enter the features of your app here --- **.
 
-### Contributing
+# Contributing
 
 ## Build instructions
 
