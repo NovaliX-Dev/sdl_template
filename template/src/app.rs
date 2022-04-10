@@ -64,13 +64,13 @@ use crate::window;
 pub fn run() -> anyhow::Result<()> {
     {% if logs %}debug!("Initialize SDL modules...");
 
-    {% endif %} // initialize SDL modules
+    {% endif %}// initialize SDL modules
     let (video, mut event_pump) = window::init_sdl_modules()
         .map_err(|e| anyhow::anyhow!(e))?;
 
     {% if logs %}info!("Creating the window...");
 
-    {% endif %} // create the window
+    {% endif %}// create the window
     let mut canvas = window::create_window(
         &video, 
         "{{project-name}}", 
