@@ -6,6 +6,8 @@
 
 ## Contributing
 
+**Important** : make sure to follow the Code of Conduct of this project. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details.
+
 ### Build instructions
 
 * Install the rust toolchain in order to have cargo installed by following

@@ -18,6 +18,10 @@ This template will generate / create :
 
 ## Contributing
 
+**Important** : make sure to follow the Code of Conduct of this project. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details.
+
+*Btw disable any linters in your editors **(for this project only)**, because they'll detect a lot of errors even if it isn't.*
+
 ### How to run / debug ?
 
 * Install the rust toolchain in order to have cargo installed by following
