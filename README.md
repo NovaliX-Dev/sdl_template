@@ -20,7 +20,7 @@ This template will generate / create :
 
 **Important** : make sure to follow the Code of Conduct of this project. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details.
 
-*Btw disable any linters in your editors **(for this project only)**, because they'll detect a lot of errors even if it isn't.*
+*Btw disable any linters in your editors **(for this project only)**, because they'll detect a lot of fake errors.*
 
 ### How to run / debug ?
 
