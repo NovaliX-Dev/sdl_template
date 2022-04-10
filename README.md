@@ -24,7 +24,7 @@ This template will generate / create :
   [this](https://www.rust-lang.org/tools/install) guide.
 * Install `cargo-generate` by running `cargo install cargo-generate`
 * Clone the project by running `git clone https://github.com/NovaliX-Dev/sdl_template`
-* Go in the `template` directory and run `cargo generate`
+* Go in the project directory and run `cargo generate`
 
 ### Reporting issues
 
