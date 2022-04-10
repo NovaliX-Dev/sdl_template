@@ -2,6 +2,12 @@
 A template for handling SDL in Rust.
 In fact, what you're reading now is adapted from it.
 
+## Features
+This template will generate / create :
+* The sources files
+* The ReadMe, Contributing, License and the Code of Conduct files
+* Github issues templates
+
 ## How to run ?
 
 * Install the rust toolchain in order to have cargo installed by following
