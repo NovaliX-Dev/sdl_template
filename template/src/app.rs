@@ -63,11 +63,15 @@ use crate::window;
 /// Launch the app
 pub fn run() -> anyhow::Result<()> {
     {% if logs %}debug!("Initialize SDL modules...");
-    {% endif %}let (video, mut event_pump) = window::init_sdl_modules()
+
+    {% endif %} // initialize SDL modules
+    let (video, mut event_pump) = window::init_sdl_modules()
         .map_err(|e| anyhow::anyhow!(e))?;
 
     {% if logs %}info!("Creating the window...");
-    {% endif %}let mut canvas = window::create_window(
+
+    {% endif %} // create the window
+    let mut canvas = window::create_window(
         &video, 
         "{{project-name}}", 
         800, 
@@ -78,8 +82,11 @@ pub fn run() -> anyhow::Result<()> {
         .map_err(|e| anyhow::anyhow!(e))?;
 
     {% if logs %}info!("Entering window loop...");
-    
-    {% endif %}'win_loop: loop {
+
+    {% endif %}// -------------------------------------------------------------------------
+    // Window loop
+    // -------------------------------------------------------------------------
+    'win_loop: loop {
         for event in event_pump.poll_iter() {
             match event {
                 // window close event (if there is only one)

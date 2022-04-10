@@ -63,7 +63,9 @@ fn main() -> anyhow::Result<()> {
     {% endif %}// --- put stuff to do before app is launched ---
 
     {% if logs %}info!("Launching the app.");
-    {% endif %}app::run()?;
+
+    {% endif %} // launch the app
+    app::run()?;
 
     // --- put stuff to do before program is exited ---
 
