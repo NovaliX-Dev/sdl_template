@@ -18,7 +18,7 @@
 Reports an issue if there is an error or a feature you want to be implemented.
 
 Before reporting an issue on the
-[issue tracker](https://github.com/{{gh-username}}/{{project-name}}/issues),
+[issue tracker](https://github.com/{{git-username}}/{{project-name}}/issues),
 please check that it has not already been reported by searching for some related
 keywords.
 
