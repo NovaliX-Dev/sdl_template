@@ -52,23 +52,21 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {% endif %}*/
 
-use log::{debug, info};
-
-mod app;
+{% if logs %}use log::{debug, info};
+{% endif %}mod app;
 mod window;
 
 fn main() -> anyhow::Result<()> {
-    // initialize the logger
+    {% if logs %}// initialize the logger
     env_logger::init();
     debug!("Logger has loaded");
+    {% endif %}// --- put stuff to do before app is launched ---
 
-    // --- put stuff to do before app is launched ---
-
-    info!("Launching the app.");
-    app::run()?;
+    {% if logs %}info!("Launching the app.");
+    {% endif %}app::run()?;
 
     // --- put stuff to do before program is exited ---
 
-    info!("Exiting...");
-    Ok(())
+    {% if logs %}info!("Exiting...");
+    {% endif %}Ok(())
 }

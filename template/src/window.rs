@@ -52,8 +52,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {% endif %}*/
 
-use log::trace;
-use sdl2::{
+{% if logs %}use log::trace;
+{% endif %}use sdl2::{
     VideoSubsystem, 
     EventPump, 
     render::Canvas, 
@@ -81,9 +81,9 @@ pub fn create_window(
     resizable: bool, 
     accelerated: bool
 ) -> Result<Canvas<Window>, String> {
-    trace!("Creating and configuring the window...");
+    {% if logs %}trace!("Creating and configuring the window...");
 
-    // configure the window builder
+    {% endif %}// configure the window builder
     let mut w_builder = video.window(title, width, height);
     if resizable {
         w_builder.resizable();
@@ -94,8 +94,8 @@ pub fn create_window(
     let window = w_builder.build()
         .map_err(|e| e.to_string())?;
 
-    trace!("Creating and configuring the canvas...");
-
+    {% if logs %}trace!("Creating and configuring the canvas...");
+    {% endif %}
     // configure the canvas builder
     let mut c_builder = window.into_canvas();
     if accelerated {

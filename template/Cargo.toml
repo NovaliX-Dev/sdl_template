@@ -7,9 +7,9 @@ edition = "2021"
 
 [dependencies]
 anyhow = "*"
-log = "*"
+{% if logs %}log = "*"
 env_logger = "*"
-
+{% endif %}
 [dependencies.sdl2]
 version = "*"
 features = ["bundled"] # static-link doesn't seems to work, wait for fix

@@ -7,18 +7,23 @@ type = "string"
 prompt = "Enter your Github username / organization"
 regex = "^[A-Za-z0-9][A-Za-z0-9-]{0,38}$"
 
-[placeholders.year]
-type = "string"
-prompt = "Enter the year (for copyright completion)"
-regex = "^[0-9]+$"
-
 [placeholders.license]
 type = "string"
 prompt = "Which license to use ?"
 choices = ["MIT", "GNU v3", "Apache v2"]
 default = "MIT"
 
+[placeholders.year]
+type = "string"
+prompt = "Enter the year (for license completion)"
+regex = "^[0-9]+$"
+
 [placeholders.license_headers]
 type = "bool"
 prompt = "Want license in the file headers ?"
+default = true
+
+[placeholders.logs]
+type = "bool"
+prompt = "Want logs in the program ?"
 default = true

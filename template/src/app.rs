@@ -52,8 +52,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {% endif %}*/
 
-use log::{debug, info};
-use sdl2::{
+{% if logs %}use log::{debug, info};
+{% endif %}use sdl2::{
     event::Event as SDLEvent,
     pixels::Color
 };
@@ -62,12 +62,12 @@ use crate::window;
 
 /// Launch the app
 pub fn run() -> anyhow::Result<()> {
-    debug!("Initialize SDL modules...");
-    let (video, mut event_pump) = window::init_sdl_modules()
+    {% if logs %}debug!("Initialize SDL modules...");
+    {% endif %}let (video, mut event_pump) = window::init_sdl_modules()
         .map_err(|e| anyhow::anyhow!(e))?;
 
-    info!("Creating the window...");
-    let mut canvas = window::create_window(
+    {% if logs %}info!("Creating the window...");
+    {% endif %}let mut canvas = window::create_window(
         &video, 
         "{{project-name}}", 
         800, 
@@ -77,16 +77,16 @@ pub fn run() -> anyhow::Result<()> {
     )
         .map_err(|e| anyhow::anyhow!(e))?;
 
-    info!("Entering window loop...");
-
-    'win_loop: loop {
+    {% if logs %}info!("Entering window loop...");
+    
+    {% endif %}'win_loop: loop {
         for event in event_pump.poll_iter() {
             match event {
                 // window close event (if there is only one)
                 SDLEvent::Quit { .. } => {
-                    info!("Window closed");
+                    {% if logs %}info!("Window closed");
 
-                    break 'win_loop
+                    {% endif %}break 'win_loop;
                 },
 
                 // --- Add others event here ---
