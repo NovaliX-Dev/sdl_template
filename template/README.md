@@ -23,14 +23,8 @@ please check that it has not already been reported by searching for some related
 keywords.
 
 ### License
-{% if license == "MIT" %}
-This project is licensed under the MIT license.
+{% if license == "MIT" %}This project is licensed under the MIT license.
+{% endif %}{% if license == "GNU v3" %}This project is licensed under the GNU GPL v3 license.
+{% endif %}{% if license == "Apache v2" %}This project is licensed under the Apache v2 license.
 {% endif %}
-{% if license == "GNU v3" %}
-This project is licensed under the GNU GPL v3 license.
-{% endif %}
-{% if license == "Apache v2" %}
-This project is licensed under the Apache v2 license.
-{% endif %}
-
 See the [LICENSE](LICENSE) for details.
