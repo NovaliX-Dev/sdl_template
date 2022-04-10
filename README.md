@@ -16,8 +16,8 @@ In fact, what you're reading now is adapted from it.
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
 * Install `cargo-generate` by running `cargo install cargo-generate`
-* clone the project by running `git clone https://github.com/NovaliX-Dev/sdl_template`
-* go in the `template` directory and run `cargo generate`
+* Clone the project by running `git clone https://github.com/NovaliX-Dev/sdl_template`
+* Go in the `template` directory and run `cargo generate`
 
 ### Reporting issues
 
