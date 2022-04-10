@@ -8,12 +8,13 @@ This template will generate / create :
 * The ReadMe, Contributing, License and the Code of Conduct files
 * Github issues templates
 
-## How to run ?
+## How to use ?
 
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
 * Install `cargo-generate` by running `cargo install cargo-generate`
-* run `cargo generate Novalix-Dev/sdl_template`
+* Run `cargo generate Novalix-Dev/sdl_template`
+* Follow the instructions
 
 ## Contributing
 
