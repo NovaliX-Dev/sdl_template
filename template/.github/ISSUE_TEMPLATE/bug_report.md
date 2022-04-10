@@ -1,3 +1,12 @@
+---
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: bug
+assignees: ''
+
+---
+
 # What happened ?
 Describe your problem in a simple way.
 Put screen shots if you have.
@@ -7,13 +16,8 @@ Put screen shots if you have.
 2. Step 2
 
 # Expected behavior
-Describe here who the application should heave reacted.
-
-# Environment informations
-Please fill those information about the environment.
-
-* OS :
-* App Version :
+Describe here who the template should heave reacted.
 
 # Addition Context
 If you have additional informations, put them here.
+
