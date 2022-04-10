@@ -89,7 +89,7 @@ pub fn run() -> anyhow::Result<()> {
                     {% endif %}break 'win_loop;
                 },
 
-                // --- Add others event here ---
+                // --- Add others SDL event here ---
 
                 _ => ()
             }
